@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro Escolar</title>
+
+    <link rel="stylesheet" href="escola.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="cadastros">
+
+            <div class="card">
+
+            <h1>Cadastro de Aluno</h1>
+
+            <p>Preencha os dados abaixo</p>
+
+            <input 
+                type="text" 
+                id="nome" 
+                placeholder="Nome"
+            >
+
+            <input 
+                type="email" 
+                id="email" 
+                placeholder="E-mail"
+            >
+
+            <input 
+                type="int" 
+                id="matricula" 
+                placeholder="Matrícula"
+            >
+
+            <button id="salvar">
+                Salvar
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h1>Cadastro de Professor</h1>
+
+            <p>Preencha os dados abaixo</p>
+
+            <input 
+                type="text" 
+                id="nomeProfessor" 
+                placeholder="Nome"
+            >
+
+            <input 
+                type="email" 
+                id="emailProfessor" 
+                placeholder="E-mail"
+            >
+
+            <input 
+                type="text" 
+                id="disciplina" 
+                placeholder="Disciplina"
+            >
+
+            <button id="salvarProfessor">
+                Salvar
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="tabelas">
+
+        <div class="card tabela-container">
+
+            <h2>Cadastros</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Matrícula</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tabela">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="card tabela-container">
+
+            <h2>Professores</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Disciplina</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tabelaProfessor">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</main>
+
+    <script src="escola.js"></script>
+
+</body>
+
+</html>
